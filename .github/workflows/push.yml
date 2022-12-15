@@ -3,7 +3,7 @@ on: [push]
 env:
   APP_IMAGE: keboola/alpine-bash-curl-jq
 
-  DOCKERHUB_USER: "keboolabot"
+  DOCKERHUB_USER: "keboolacipush"
   DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
 jobs:
   Build:
