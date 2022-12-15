@@ -18,5 +18,8 @@ jobs:
       - name: Build image
         run: docker build . -t $APP_IMAGE
 
+  Deploy:
+    if: startsWith(github.ref, 'refs/branches/main')
+    steps:
       - name: Push Image
         run: docker push $APP_IMAGE
