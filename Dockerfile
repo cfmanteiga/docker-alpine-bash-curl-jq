@@ -1,4 +1,4 @@
-FROM gliderlabs/alpine:latest
+FROM alpine:latest
 
 RUN apk add --no-cache curl jq bash
 
